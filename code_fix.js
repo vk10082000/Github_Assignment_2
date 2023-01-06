@@ -1,12 +1,17 @@
 //prime problem
 
 let num=7;
-for (let i=0; i<=num-1; i++){
+let count=0;
+for (let i=1; i<=num; i++){
 if(num%i==0){
-console.log("Prime Number");
-} else {
-console.log("Not A Prime Number");
+count++
+
+} 
 }
+if(count==2){
+console.log(number,"is prime number")
+}else{
+console.log(number, "is not a prime number");
 }
 
 
@@ -15,11 +20,11 @@ console.log("Not A Prime Number");
 //palindrome
 
 let bag="";
-let arr="lalit";
-for (let i=0; i<=arr.length-1; i++){
-  bag+=arr[i];
+let str="lalit";
+for (let i=str.length-1; i>=0; i--){
+  bag+=str[i];
 }
-if(arr===bag){
+if(str===bag){
 console.log("Palindrome")
 } else {
 console.log("Not A Palindrome")
